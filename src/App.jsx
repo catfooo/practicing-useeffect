@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+
+
+
 import { useState } from "react";
 import { Logos } from "./components/Logos";
 import { StaticComponent } from "./components/StaticComponent";
@@ -31,6 +35,12 @@ export const App = () => {
       "Before you decide to delete all components and start from scratch, we suggest examining them closely to grasp their structure. They can act as a blueprint for your future work.",
     componentInfo: " Here is some component examples:",
   };
+
+
+  useEffect(() => {
+    console.log('mount')
+  })
+
   return (
     <>
       {/* Component Example */}
